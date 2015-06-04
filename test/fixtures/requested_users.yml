@@ -1,0 +1,27 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  resource_id: 1
+  name: MyString
+  email: MyString
+  phone: MyString
+  company_name: MyString
+  first_name: MyString
+  last_name: MyString
+  feedback: MyText
+  is_anonymous: false
+  other_company_name: MyString
+  instance_id: 1
+
+two:
+  resource_id: 1
+  name: MyString
+  email: MyString
+  phone: MyString
+  company_name: MyString
+  first_name: MyString
+  last_name: MyString
+  feedback: MyText
+  is_anonymous: false
+  other_company_name: MyString
+  instance_id: 1

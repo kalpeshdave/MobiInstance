@@ -1,0 +1,96 @@
+/*
+  =require twitter-bootstrap-static/bootstrap
+
+  Use Font Awesome icons (default)
+  To use Glyphicons sprites instead of Font Awesome, replace with "require twitter-bootstrap-static/sprites"
+  =require twitter-bootstrap-static/fontawesome
+  */
+@media (max-width: 320px) {
+.modal {
+  position: absolute;
+  top: 16%;
+  left: 50%;
+  z-index: 1050;
+  width: 300px;
+  margin: -240px 0 0 -150px;
+  overflow: auto;
+  background-color: #ffffff;
+  border: 1px solid #999;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  *border: 1px solid #999;
+  -webkit-border-radius: 6px;
+     -moz-border-radius: 6px;
+          border-radius: 6px;
+  -webkit-box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
+     -moz-box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
+  -webkit-background-clip: padding-box;
+     -moz-background-clip: padding-box;
+          background-clip: padding-box;
+}
+}
+
+body .container{
+  width:320px !important;
+}
+
+.header_text {
+    text-align: center;
+}
+
+.header_text h1 {
+    padding-bottom: 0px;
+    padding-top: 20px;
+}
+.interested_form p {
+    color:red;
+    font-weight: bold;
+}
+.form_text {
+    background-color: #FFA500;
+    color: #666663;
+    font-size: 20px;
+    font-weight: bold;
+    height: 50px;
+    border-bottom: 1px solid black;
+}
+.form_below_text p {
+    color:red;
+    padding: 15px 0 10px 80px;
+    text-align: center;
+    font-weight: bold;
+}
+.resource {
+    border-bottom: 1px solid black;
+    padding: 15px;
+}
+.left { float: left; }
+
+.right { float: right; }
+.overlay {
+        color: #FFFFFF;
+        cursor: wait;
+        min-height: 200px;
+        padding-left: 460px;
+        padding-top: -50px;
+        position: fixed;
+        top: 1;
+        width: 64%;
+        z-index: 50;
+}
+
+.overlay img {
+    position:relative;
+}
+
+#labeled_info {
+    background-color: #f1f1f1;
+    width: 100%;
+    display: none;
+    height: 35px;
+    text-align: center;
+    padding: 5px 0 0 0;
+}
+
+
+.alert-danger, .alert-error, .alert-success { padding: 46px 22px 10px 15px; }
