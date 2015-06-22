@@ -5,7 +5,8 @@
   To use Glyphicons sprites instead of Font Awesome, replace with "require twitter-bootstrap-static/sprites"
   =require twitter-bootstrap-static/fontawesome
   */
-@media (max-width: 320px) {
+
+  @media (max-width: 350px) {
 .modal {
   position: absolute;
   top: 16%;
@@ -30,8 +31,8 @@
 }
 }
 
-body .container{
-  width:320px !important;
+body{
+  width:98%;
 }
 
 .header_text {

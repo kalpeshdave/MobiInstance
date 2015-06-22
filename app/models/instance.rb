@@ -3,4 +3,5 @@ class Instance < ActiveRecord::Base
   validates :name, presence: true
   has_and_belongs_to_many :resources, :join_table => :instances_resources
   has_many :requested_users
+  has_many :feedbacks
 end

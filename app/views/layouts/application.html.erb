@@ -48,20 +48,10 @@
             <span class="icon-bar"></span>
           </a>
           <a class="brand" href="#">Alchemist Connect</a>
-          <div class="container nav-collapse">
-            <ul class="nav">
-              <li><%#= link_to "Link1", "/path1"  %></li>
-              <li><%#= link_to "Link2", "/path2"  %></li>
-              <li><%#= link_to "Link3", "/path3"  %></li>
-            </ul>
-            <ul class="nav pull-right">
-              <li><%= link_to "About", "/path3"  %></li>
-            </ul>
-          </div><!--/.nav-collapse -->
+          
         </div>
       </div>
     </div>
-
 
     <% flash.each do |name, msg| %>
       <% if msg.is_a?(String) %>
@@ -72,12 +62,13 @@
       <% end %>
     <% end %>
 
+
     <div class="row">&nbsp;</div>
 
-    <div class="container">
-      <div class="row" style="margin-top: 8px;">
-        <%= yield %>
-      </div><!--/row-->
+    <div class="container" style="width: 350px !important">
+        <div class="row" style="margin-top: 8px;">
+             <%= yield %>
+        </div><!--/row-->
 
       <footer>
         <p>&copy; Company 2012</p>
@@ -89,6 +80,7 @@
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <%= javascript_include_tag "application" %>
+
 
   </body>
 

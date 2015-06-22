@@ -15,3 +15,28 @@
 //= require twitter/bootstrap
 //= require_tree ./specific
 //= require_tree .
+
+function change_form_action() {
+    $("form#new_requested_user").attr("action","/feedbacks") ;
+    $("form#new_requested_user").submit();
+}
+
+
+$(document).ready(function() {
+   if($.cookie("user_first_name")) {
+       $("#requested_user_first_name").val($.cookie("user_first_name"));
+   }
+   if($.cookie("user_last_name")) {
+       $("#requested_user_last_name").val($.cookie("user_last_name"));
+   }
+   if($.cookie("user_email")) {
+       $("#requested_user_email").val($.cookie("user_email"));
+   }
+   if($.cookie("user_company_name")) {
+       $("#requested_user_company_name").val($.cookie("user_company_name"));
+   }
+
+   $("[type='submit']").on('click', function(){
+       $("#new_requested_user").attr("action","/requested_users") ;
+   });
+})

@@ -11,7 +11,9 @@ SelfMobi::Application.routes.draw do
 
   constraints :subdomain => /^(?!www\b)(\w+)/ do
     match '/' => 'home#index'
+    resources :resources
     resources :requested_users
+    resources :feedbacks
   end
 
   devise_for :admin_users, ActiveAdmin::Devise.config
