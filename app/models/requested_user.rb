@@ -1,5 +1,5 @@
 class RequestedUser < ActiveRecord::Base
-  attr_accessible :company_name, :email, :feedback, :first_name, :instance_id, :is_anonymous, :last_name, :name, :other_company_name, :phone, :resource_id
+  attr_accessible :company_name, :email, :feedback, :first_name, :instance_id, :is_anonymous, :last_name, :name, :other_company_name, :phone, :resource_id, :created_at, :updated_at
   default_scope where("resource_id IS NOT NULL")
   belongs_to :resource
   belongs_to :instance
